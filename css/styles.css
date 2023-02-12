@@ -186,7 +186,7 @@ h2 {
 }
 /*Services*/
 /*section3*/
-.options-title {
+h2 {
   text-transform: capitalize;
   text-align: center;
   margin-bottom: 72px;
@@ -205,36 +205,34 @@ h2 {
 }
 /*Our team*/
 /*section4*/
-#our-team {
+#team-members-section {
+  margin-top: 120px;
+  padding: 120px 0 120px 0;
   background-color: var(--light);
-  padding: 120px 0;
 }
-.team-title {
-  text-transform: capitalize;
-  margin: 0 0 72px 0;
-}
-.team-list {
-  list-style-type: none;
-  justify-content: center;
-  display: flex;
-  margin: 0 156px;
+.team-members-list {
   padding: 0;
+  justify-content: center;
+  gap: 24px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
-.team-list li {
+.member {
+  padding-bottom: 32px;
   text-align: center;
-  margin: 0 12px;
   background: white;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
-.team-list h3 {
+.member-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: var(--dark);
 }
-.team-list p {
+.member-job {
   font-size: 16px;
   line-height: 24px;
   color: var(--text);
@@ -289,33 +287,27 @@ footer {
 }
 
 .work-examples {
-  width: calc(100% - 312px);
-  flex-wrap: wrap;
-  list-style-type: none;
-  justify-content: center;
-  display: flex;
-  margin: 0 156px 72px 156px;
   padding: 0;
+  justify-content: center;
+  gap: 24px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
 }
-.work-examples li {
-  width: calc(100% / 3 - 26px);
-  height: 420px;
-  margin: 0 12px;
-  box-sizing: border-box;
+.work-item {
+  flex-basis: calc((100% - 48px) / 3);
   background: white;
-  border: 1px solid var(--accent);
-  margin-bottom: 48px;
+  border: 0 solid var(--accent);
 }
-.work-examples h3 {
-  margin: 32px 0 8px 16px;
+.work-item-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--dark);
 }
-.work-examples p {
-  margin: 0 0 32px 16px;
+.work-item-sphere {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
