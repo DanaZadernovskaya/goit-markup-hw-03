@@ -101,7 +101,9 @@ nav {
 .links {
   text-decoration-line: none;
 }
-
+.links.current {
+  color: var(--pressed-state);
+}
 /*contacts*/
 .contacts {
   font-size: 16px;
@@ -300,7 +302,8 @@ footer {
 
 .work-examples {
   justify-content: center;
-  gap: 24px;
+  row-gap: 48px;
+  column-gap: 24px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
