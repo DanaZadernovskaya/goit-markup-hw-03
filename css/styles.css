@@ -36,12 +36,13 @@ img {
 #header-container {
   display: flex;
   justify-content: space-between;
+  padding: 24px 0;
 }
 header {
   width: 100%;
   display: flex;
   align-items: center;
-  height: 72px;
+
   border-bottom: 1px solid var(--accent);
 }
 
@@ -127,7 +128,7 @@ nav {
 .section1 {
   display: flex;
   background-color: var(--dark);
-  padding: 188px 472px;
+  padding: 188px 0;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -140,6 +141,7 @@ h1 {
   letter-spacing: 0.02em;
   color: white;
   margin: 0 auto 48px auto;
+  width: 496px;
 }
 .order-button {
   width: 159px;
@@ -149,7 +151,7 @@ h1 {
   font-weight: 500;
   font-size: 16px;
   display: flex;
-  background: var(--primary-brand);
+  background-color: var(--primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   border-radius: 4px;
@@ -174,12 +176,15 @@ h1 {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/*section2*/
+#section2 {
+  padding: 120px 0;
+}
 .adv-list {
   display: flex;
   list-style-type: none;
   justify-content: center;
   gap: 24px;
-  padding: 120px 0;
 }
 h2 {
   font-weight: 700;
@@ -307,12 +312,11 @@ footer {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 .work-item {
   flex-basis: calc((100% - 52px) / 3);
   background: white;
-  border: 1px solid var(--accent);
 }
 .work-item-title {
   font-weight: 500;
@@ -329,4 +333,6 @@ footer {
 }
 .work-description {
   padding: 32px 0 32px 16px;
+  border: 1px solid var(--accent);
+  border-width: 0 1px 1px 1px;
 }
