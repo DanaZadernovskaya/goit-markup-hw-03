@@ -26,6 +26,15 @@ img {
   max-width: 100%;
   height: auto;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 /*header*/
 .container {
   width: 100%;
@@ -195,7 +204,9 @@ h2 {
   text-transform: capitalize;
   color: var(--dark);
 }
-
+.adv-headings {
+  margin-bottom: 8px;
+}
 .avd-inf {
   font-size: 16px;
   line-height: 24px;
@@ -238,7 +249,7 @@ h2 {
   flex-wrap: wrap;
 }
 .member {
-  padding-bottom: 32px;
+  padding: 32px 0;
   text-align: center;
   background: white;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -250,6 +261,7 @@ h2 {
   font-size: 20px;
   line-height: 24px;
   color: var(--dark);
+  margin-bottom: 8px;
 }
 .member-job {
   font-size: 16px;
@@ -258,7 +270,7 @@ h2 {
 }
 /*footer*/
 footer {
-  height: 310px;
+  padding: 100px 0;
   background: var(--dark);
   align-items: center;
   display: flex;
@@ -269,6 +281,7 @@ footer {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--accent);
+  margin-top: 16px;
 }
 /*PORTFOLIO*/
 .panel-buttons {
@@ -324,6 +337,7 @@ footer {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--dark);
+  margin-bottom: 8px;
 }
 .work-item-sphere {
   font-size: 16px;
